@@ -5,20 +5,6 @@ Hospital leadership faces two critical operational and clinical challenges: **Em
 
 This project analyzes ED operational logs and ICU patient records to uncover root-cause bottlenecks, build interpretable baseline predictive models, and deliver evidence-based recommendations for hospital management.
 
-
-### Repository Structure
-healthcare-analytics-capstone/
-├── data/                         # Raw & cleaned datasets (excluded from git via .gitignore)
-├── notebooks/                    # Reproducible Jupyter analysis & ML models
-│   ├── 01_ED_Analysis.ipynb
-│   └── 02_ICU_Sepsis_Analysis.ipynb
-├── dashboard/                    # Interactive BI dashboards
-├── reports/                      # Executive Report (8-12 pages for hospital management)
-├── images/                       # Exported dashboard screenshots & model performance metrics
-├── README.md                     # Project documentation
-├── requirements.txt              # Python environment dependencies
-└── .gitignore                    # Git ignore rules
-
 ### Key Findings
 1. Emergency Department Operations (01_ED_Analysis.ipynb)
 - Primary Bottleneck: Average total ED visit duration was 71 minutes, with Provider Wait Time averaging 42 minutes (59%)—far exceeding triage (8 mins), registration (6 mins), and consultation (15 mins).
