@@ -18,7 +18,9 @@ This project analyzes ED operational logs and ICU patient records to uncover roo
   
 ### Modeling & Evaluation Summary
 - ED Waiting Time Prediction (Regression): Trained Linear Regression, Decision Tree, and Random Forest models evaluated via MAE, RMSE, and R2 to quantify prediction error in clinical minutes.
+![ED Random Forest Regression](images/rf_regression_model.png)
 - ICU Sepsis Prediction (Classification): Trained Logistic Regression, Decision Tree, and Random Forest classifiers using stratified train/test splits and strictly pre-onset clinical features (excluding post-outcome variables like total LOS, antibiotics administered etc). Evaluated using Confusion Matrices, Precision, Recall, F1-Score, and ROC-AUC, prioritizing Recall to minimize the severe mortality cost of False Negatives.
+![Sepsis Confusion Matrix](images/rf_confusion_matrix.png)
   
 ### Strategic Recommendations
 - Reallocate ED Overnight Staffing (21:00–05:00): Shift 2–3 provider slots to cover late-night/early-morning arrivals and mitigate the 44-minute zero-queue baseline delay.
